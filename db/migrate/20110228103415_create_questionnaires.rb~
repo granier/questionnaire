@@ -1,0 +1,19 @@
+class CreateQuestionnaires < ActiveRecord::Migration
+  def self.up
+    create_table :questionnaires do |t|
+      t.int :id
+      t.string :titre
+      t.int :niveau_difficulte
+      t.int :cout
+      t.int :gain
+      t.int :id_categorie
+      t.int :popularite
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :questionnaires
+  end
+end

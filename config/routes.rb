@@ -1,4 +1,4 @@
-Questionnaire::Application.routes.draw do
+Quizz::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
